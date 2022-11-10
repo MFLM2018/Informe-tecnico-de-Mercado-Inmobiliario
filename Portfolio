@@ -1,0 +1,102 @@
+---
+title: "Portfolio"
+author: "MFLM"
+date: "`r Sys.Date()`"
+output:
+  html_document: default
+---
+1-Analisis del valor del suelo en sector determinado
+================
+
+### interrogantes a responder en en el presente informe.
+* 1-Tendencia del valor del suelo segun zona establecida a analizar.
+* 2-Diferencias entre el valor de mercado y el valor fiscal.
+* 3-Determinacion de fechas en las cuales la organizacion inmobilairia debe de invertir mas en prescencia de portales inmobiliarios por venta de lotes en todo guadalajara.
+
+### Analisis y conclucion de la interrogante N°1.
+
+
+
+
+*Se establecio la zona de estudio en base a las peticiones del comitente, a continuacion se expone un mapa del sector catastral sometido a estudio*
+
+<center> ![Zona afectada a estudio](C:\Users\Marcelo\Desktop\portfolio\graficos\zona.jpeg){width="600px"}</center>
+
+<center> **Superficie Total analizada = 37060,52 metros2** </center>
+
+*Esta superficie corresponde al total de parcelas sometidas a estudio, sin embargo se descartaron 4 parcelas ya que estas son parcelas internas y si se tomasen el valor de las mismas alteraria el resultado del estudio de mercado*
+
+<center> ![parcelas internas excluidas](C:\Users\Marcelo\Desktop\portfolio\graficos\exclu.jpeg){width="600px"}</center>
+
+
+Muestras Geoposicionadas
+-------------
+<center> ![Mapa_muestras](C:\Users\Marcelo\Desktop\portfolio\graficos\Muestras_mapa.jpeg){width="600px"}</center>
+
+<center> ![grafica_muestras_Id And Valor del Metro2 en dolares](C:\Users\Marcelo\Desktop\portfolio\graficos\Rplot.jpeg){width="600px"}</center>
+
+## Conluciones
+
+**Se establece que existe una tendencia sobre el estudio realizida donde se detecto que en el sector norte especificamente aquellas parcelas frentistas a Avenida de la Paz y Calle francisco Javier gamboa se establecen los mayores valores de mercado, la zona de estudio ubicada al sur vemos que los valores dimunuyen paulatinamente a partir de Calle Jose Guadakuoe Zuno Hernandez**.
+
+<center> ![Mapa interpolado geoestadistico](C:\Users\Marcelo\Desktop\portfolio\graficos\geoesta.jpeg){width="600px"}</center>
+
+|indicador|valor en U$D por metro2|
+|---------|------------|
+|Media del valor del suelo|1364,97|
+|Valor Maximo registrado|2150,00|
+|Valor Minimo registrado|900.00|
+
+|indicador|valor en U$D segun superficie de parcelas|
+|---------|------------|
+|Media del valor del suelo|137650,18|
+|Valor Maximo registrado|877568,92|
+|Valor Minimo registrado|23380.14|
+
+|Indicador|Metros2|
+|---------|-------|
+|Superficie media|528,43|
+|Superficie Maxima registrada|2988,61|
+|Superficie minima registrada|130,85|
+
+
+--------------------------------------------------------------------------------
+
+2-Diferencia entre valor de mercado y valor fiscal
+================
+
+**Luego de analizar las muestras y comprar los valores de mercado sobre la valuacion fiscal de la tierra, encontramos un porcentaje alto entre la diferencia sobre el valor de mercado sobre el valor fiscal, si bien este no sigue una constante podemos establecer porcentajes de referencia aludiendo a la Media, al maximo y al Minimo los cuales se exponen en el siguiente cuadro=**
+
+|indicador|%|
+|---------|------------|
+|% medio entre las muestras|533|
+|% Maximo registrado|6864|
+|% Minimo registrado|194|
+
+<center> ![Valor Fiscal](C:\Users\Marcelo\Desktop\portfolio\graficos\Fiscalv.jpeg){width="600px"}</center>
+
+<center> ![Valor de Mercado](C:\Users\Marcelo\Desktop\portfolio\graficos\valor.jpeg){width="600px"}</center>
+
+como se menciono anteriormente la diferencia entre el valor de mercado es sustancial, siendo los valores fiscales muy por debajo del valor de mercado.Del total de muestras analizadas (72), encontramos que 18 de ellas se encuentran por encima de la media muestral y 52 muestras por debajo de la media muestral.
+
+<center> ![Porcentaje mayor a la media/inferior a la media, el graduado establecido entre ambos debe de ser miltiplicado por 100](C:\Users\Marcelo\Desktop\portfolio\graficos\media.jpeg){width="600px"}</center>
+
+3-Determinacion de fechas para inversion en portales inmobiliarioa
+================
+<center> ![Busqueda por palabra clave_terrenos en venta en guadalajara](C:\Users\Marcelo\Desktop\portfolio\graficos\2021.jpeg){width="600px"}</center>
+
+<center> ![Busqueda por palabra clave_terrenos en venta en guadalajara](C:\Users\Marcelo\Desktop\portfolio\graficos\2022.jpeg){width="600px"}</center>
+
+***Los números representan el interés de búsqueda en relación con el valor máximo de la lista correspondiente a la región y el período especificados. El valor 100 indica la popularidad máxima del término, 50 implica la mitad de popularidad, y 0 significa que no hubo suficientes datos para este término.***
+
+**Conclucion= si comparamos ambos graficos (2021/2022) podemos establecer que se debera de realizar una mayor inversion en los meses de mayo y julio, si bien las busquedas se invrementaron en este ultimo año, podemos tomar el parametro de busqueda el año anterior. **
+
+
+##Pasos##
+
+Si desea conocer el proceso por el cual se realizo el presente informe.
+
+ <i class="Web"></i> [PINCHE AQUI](https://rpubs.com/mflm/968740)
+
+
+
